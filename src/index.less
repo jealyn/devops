@@ -1,0 +1,242 @@
+/*通用的style*/
+
+body {
+    margin: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.hidden {
+    display: none;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.pull-left {
+    float: left;
+}
+
+.pull-right {
+    float: right;
+}
+
+.mb0 {
+    margin-bottom: 0 !important;
+}
+
+.mt5 {
+    margin-top: 5px;
+}
+
+.mb5 {
+    margin-bottom: 5px;
+}
+
+.w240 {
+    width: 240px;
+}
+
+// 搜索表单样式
+.query-form {
+    margin: 0 0 20px;
+    //padding: 24px;
+    background: #EBEEF5;
+    //border: 1px solid #d9d9d9;
+    //border-radius: 6px;
+
+    .el-card__body {
+        padding: 20px 20px 0;
+    }
+}
+
+// Modal宽度限制
+.el-dialog {
+    min-width: 490px !important;
+    overflow: auto;
+}
+
+// 数字输入框样式修改
+.el-input-number .el-input__inner {
+    text-align: left;
+}
+
+// table 展开
+.table-expand {
+    font-size: 0;
+
+    label {
+        width: 90px;
+        color: #99a9bf
+    }
+
+    .el-form-item {
+        margin-right: 0;
+        margin-bottom: 0;
+        width: 50%;
+    }
+}
+
+// 上传图片
+.avatar-uploader {
+    position: relative;
+
+    .avatar {
+        width: 120px;
+        height: 120px;
+        display: block;
+        user-select: none;
+    }
+
+    .avatar-uploader-icon {
+        font-size: 28px;
+        color: #8c939d;
+        width: 120px;
+        height: 120px;
+        line-height: 120px;
+        text-align: center;
+    }
+
+    .el-upload {
+        border: 1px dashed #d9d9d9;
+        border-radius: 6px;
+        cursor: pointer;
+        position: relative;
+        overflow: hidden;
+
+        &:hover {
+            border-color: #20a0ff;
+        }
+    }
+
+    .upload-progress {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: #000;
+        font-size: 16px;
+        font-weight: bold;
+    }
+}
+
+// 多选
+.el-select-dropdown__item {
+    max-width: 350px;
+    padding: 0 27px 0 20px;
+}
+
+.el-select__tags {
+    .el-select__tags-text {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        max-width: 150px;
+        display: inline-block;
+        vertical-align: middle;
+    }
+
+    .el-tag {
+        line-height: normal;
+
+        .el-icon-close {
+            top: 2px;
+        }
+    }
+}
+
+.el-menu--collapse {
+    .el-submenu {
+        & > .el-submenu__title {
+            & > span {
+                height: 0;
+                width: 0;
+                overflow: hidden;
+                visibility: hidden;
+                display: inline-block;
+            }
+            .el-submenu__icon-arrow {
+                visibility: hidden;
+            }
+        }
+    }
+}
+
+/*清除浮动*/
+.clear:after {
+    clear: both;
+    display: table;
+    content: "";
+}
+
+/*IE浏览器的专有属性，触发ie的hasLayout属性，清除浮动*/
+.clear {
+    *zoom: 1;
+}
+
+.el-table a {
+    color: #409eff;
+    text-decoration: none;
+}
+
+.widthCustom {
+    width: 160px;
+}
+
+.iconfont {
+    display: inline-block;
+}
+
+/* 嵌套表格 */
+.nestingTable {
+    overflow: hidden;
+
+    .el-table__expanded-cell, .el-table__expanded-cell[class*=cell] {
+        padding: 0;
+    }
+
+    .el-table {
+        border: none;
+        overflow: hidden;
+
+        tr:nth-last-child(1) td {
+            border-bottom: none;
+        }
+    }
+
+    .el-table__row.noChildren {
+        .el-table__expand-icon {
+            visibility: hidden;
+        }
+    }
+
+    .hasChildren + tr .el-table__expanded-cell {
+        border: none;
+    }
+
+    tr .el-table__body-wrapper {
+        overflow-x: hidden;
+    }
+}
+
+/* 嵌套表格 end */
+
+.el-notification__content {
+    font-size: 14px;
+    line-height: 21px;
+    margin: 6px 0 0;
+    color: #606266;
+    text-align: inherit;
+    word-break: break-all;
+}
+
+//统一button里阿里字体图标样式
+button .iconfont {
+    font-size: 12px;
+    margin-right: 5px;
+}

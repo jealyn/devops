@@ -1,0 +1,197 @@
+body {
+    background: #fff;
+}
+
+.layout {
+    background: #fff;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    box-sizing: border-box;
+    min-width: 1200px;
+
+    .layout-content-card {
+        margin: 5px;
+        padding: 10px 20px 20px;
+        background: #fff;
+    }
+
+    .layout-content {
+        min-height: 500px;
+        margin: 15px 0;
+    }
+
+    .layout-copy {
+        text-align: center;
+        padding: 10px 0 20px;
+        color: #9ea7b4;
+    }
+
+    .layout-menu-left:not(.el-menu--collapse) {
+        width: 200px;
+    }
+
+    .layout-menu-left.el-menu--collapse {
+        overflow: inherit;
+    }
+
+    .layout-menu-left {
+        box-sizing: border-box;
+        position: fixed;
+        min-height: 100%;
+        z-index: 10;
+        overflow-y: auto;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        opacity: 1;
+        box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.2), 0px 4px 5px 0px rgba(0, 0, 0, 0.14), 0px 0 0 0px rgba(0, 0, 0, 0.12);
+        border-right: 0 solid transparent;
+        padding-top: 70px;
+
+        &::-webkit-scrollbar {
+            display: none
+        }
+
+        .el-menu-item-group__title {
+            padding: 0;
+        }
+
+        .el-submenu [class^=iconfont] {
+            vertical-align: middle;
+            margin-right: 5px;
+            width: 24px;
+            text-align: center;
+            font-size: 18px;
+        }
+
+        .el-menu-item [class^=iconfont] {
+            margin-right: 5px;
+            width: 24px;
+            text-align: center;
+            font-size: 18px;
+        }
+    }
+
+    .layout-right {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        box-sizing: border-box;
+        padding-left: 200px;
+        transition: padding .3s ease-in-out;
+
+        &.collapse {
+            padding-left: 64px;
+
+            .nav-control {
+                transform: rotate(0);
+            }
+        }
+
+        .nav-control {
+            cursor: pointer;
+            color: #fff;
+            margin: 21px 0 0 24px;
+            transform: rotate(180deg);
+            transition: all .3s;
+            width: 28px;
+        }
+    }
+
+    .layout-header {
+        height: 70px;
+        background: #62abef;
+        width: 100%;
+
+        &-info {
+            float: right;
+            margin-right: 4.5%;
+            line-height: 70px;
+            font-size: 16px;
+
+            span {
+                color: #fff;
+            }
+
+            .el-button--text {
+                color: #fff;
+                margin-left: 10px;
+            }
+        }
+    }
+
+    .layout-logo {
+        height: 70px;
+        line-height: 70px;
+        text-align: center;
+        font-size: 18px;
+        color: #fff;
+        width: 200px;
+        position: fixed;
+        z-index: 11;
+        top: 0;
+        left: 0;
+        transition: width .3s ease-in-out;
+        opacity: 1;
+        background: #62abef;
+        box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.2), 0px 4px 5px 0px rgba(0, 0, 0, 0.14), 0 0 0 0 0;
+
+        &.collapse {
+            width: 64px;
+
+            img {
+                width: 60px;
+            }
+        }
+
+        a {
+            display: inline-block;
+            color: #fff;
+            text-decoration: none;
+            height: 70px;
+        }
+
+        img {
+            margin: 23px 0 0 0;
+            width: 134px;
+            transition: width .28s ease-out;
+        }
+    }
+
+    .el-breadcrumb__item__inner:hover, .el-breadcrumb__item__inner a:hover {
+        color: #48576a;
+        cursor: text;
+    }
+
+    .el-breadcrumb {
+        padding: 10px 0;
+        border-bottom: 1px solid #eaeefb;
+    }
+
+    .header-menu {
+        display: inline-block;
+        vertical-align: top;
+        height: 70px;
+        line-height: 70px;
+
+        ul {
+            margin: 0 0 0 10px;
+            padding: 0;
+
+            li {
+                display: inline-block;
+                padding: 0 20px;
+                color: #fff;
+                text-decoration: none;
+                cursor: pointer;
+
+                &.active {
+                    background: #5a9bd7;
+                }
+            }
+        }
+    }
+}
