@@ -9,13 +9,14 @@
 -------------------
 ### QUICK START
 -------------------
-> git clone git@github.com:jealyn/devops.git <br>
-> cd devops <br>
-> npm install（安装依赖） <br>
-> npm start（开发环境）<br> <br>
-> npm run build（生产环境打包）<br>
-> npm run lint （eslint修正代码）
-
+```
+git clone git@github.com:jealyn/devops.git
+cd devops
+npm install（安装依赖
+npm start（开发环境
+npm run build（生产环境打包
+npm run lint （eslint修正代码）
+```
 ### 注意事项
 -------------------
 > 安装新版本包需要指定版本号，例如：npm install element-ui@2.0.3 --save<br>
