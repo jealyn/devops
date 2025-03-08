@@ -15,7 +15,7 @@
   "license": "ISC",
   "dependencies": {
     "async-validator": "^1.8.5",
-    "axios": "^0.18.0",
+    "axios": "^1.8.2",
     "babel-polyfill": "^6.26.0",
     "dayjs": "^1.7.4",
     "element-ui": "^2.9.2",
